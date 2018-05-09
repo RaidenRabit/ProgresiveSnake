@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="813753af-24f3-44a0-86b4-a32843361bbc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/SnakeService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SnakeService.disco" MetadataType="Disco" ID="08e73d7c-dd1f-4ed1-bba4-9e28294b0dcd" SourceId="1" SourceUrl="http://localhost/SnakeService?disco" />
+    <MetadataFile FileName="SnakeService.xsd" MetadataType="Schema" ID="43a5b50e-f4b5-4e50-883d-eb75d684cfea" SourceId="1" SourceUrl="http://localhost/SnakeService?xsd=xsd1" />
+    <MetadataFile FileName="SnakeService1.xsd" MetadataType="Schema" ID="fbd858fb-595e-4e55-8201-1a6a3e71adc2" SourceId="1" SourceUrl="http://localhost/SnakeService?xsd=xsd0" />
+    <MetadataFile FileName="SnakeService.wsdl" MetadataType="Wsdl" ID="1eeb5748-8150-4fd9-b1b5-870442559bf6" SourceId="1" SourceUrl="http://localhost/SnakeService?wsdl" />
+    <MetadataFile FileName="SnakeService2.xsd" MetadataType="Schema" ID="ae72faca-63ae-40a4-8a47-6421478ff1a5" SourceId="1" SourceUrl="http://localhost/SnakeService?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

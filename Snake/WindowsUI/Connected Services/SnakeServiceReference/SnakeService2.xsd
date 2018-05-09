@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ModelTier" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ModelTier" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Snake">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Dir" type="xs:int" />
+      <xs:element minOccurs="0" name="Pieces" nillable="true" type="tns:ArrayOfPiece" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Snake" nillable="true" type="tns:Snake" />
+  <xs:complexType name="ArrayOfPiece">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Piece" nillable="true" type="tns:Piece" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPiece" nillable="true" type="tns:ArrayOfPiece" />
+  <xs:complexType name="Piece">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="X" type="xs:int" />
+      <xs:element minOccurs="0" name="Y" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Piece" nillable="true" type="tns:Piece" />
+  <xs:complexType name="Board">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Obstacles" nillable="true" type="tns:ArrayOfObstacle" />
+      <xs:element minOccurs="0" name="XSize" type="xs:int" />
+      <xs:element minOccurs="0" name="YSize" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Board" nillable="true" type="tns:Board" />
+  <xs:complexType name="ArrayOfObstacle">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Obstacle" nillable="true" type="tns:Obstacle" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfObstacle" nillable="true" type="tns:ArrayOfObstacle" />
+  <xs:complexType name="Obstacle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Type" type="xs:boolean" />
+      <xs:element minOccurs="0" name="X" type="xs:int" />
+      <xs:element minOccurs="0" name="Y" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Obstacle" nillable="true" type="tns:Obstacle" />
+</xs:schema>

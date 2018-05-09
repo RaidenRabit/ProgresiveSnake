@@ -81,7 +81,7 @@ namespace WindowsUI
                 this.snake = snake;
                 pbCanvas.Invalidate(); //redraw form
                 
-                label1.Text = ""+snake.Pieces.Count(); //show score
+                label1.Text = "Score: "+snake.Pieces.Count(); //show score
             }
             else
                 label1.Text = "You lost!";
